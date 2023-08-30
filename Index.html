@@ -1,0 +1,1159 @@
+<script>
+    /*var miVariable = "freeCodeCamp";
+    var miNombre = "Alexis";
+    
+    var cociente = 5 / 0;
+    console.log(cociente);
+    
+    cociente = 10 % 5;                
+    console.log(cociente);
+
+    console.log("Hola Mundo");
+    console.log(miVariable);
+    console.log(miNombre);    
+
+    var a = 10;
+
+    a = a + 5;
+    console.log(a);
+
+//+= (es un operador de incremento y asignacion). El resultado es igual como escribir lo que esta arriba.
+    a += 5;
+    console.log(a);
+
+//Escapar comillas en un string. Se agrega \ antes de las comillas que quieres incluir dentro de la string.
+    var cadena = "\"Que\" esta pasando aqui?"
+    console.log(cadena);
+    
+//Tambien puedes hacerlo con comillas simples dentro de las comillas dobles o viceversa.
+    cadena = '"Que" esta pasando aqui?'
+    console.log(cadena);
+
+//Como saber cuantos caracteres contiene mi string (se le agrega .length a la variable cuando esta dentro de console.log).
+    var miCadena = "Aprendiendo";
+    console.log(miCadena.length);
+
+//Como acceder a un caracter dentro de un string (agregas [] despues de la variable en console.log y le agregas el numero de caracter).
+    var lenguaje = "JavaScript Vanilla";
+    console.log(lenguaje[4]);
+    console.log(lenguaje[0]);
+    console.log(lenguaje[11]);
+
+//Como acceder al ultimo indice de una string.
+    var cadenaDeCaracteres = "JavaScript";
+    var n = 5;
+
+    console.log(cadenaDeCaracteres[cadenaDeCaracteres.length-1]);
+    console.log(cadenaDeCaracteres[cadenaDeCaracteres.length-n]);
+
+//Concatenar cadenas con variables
+    var miSustantivo = "bicicleta";
+    var miAdjetivo = "pequeña";
+    var miVerbo = "volo";
+    var miAdverbio = "lentamente";
+
+    var palabrasEnBlanco = "La " + miSustantivo + " " + miAdjetivo + " " + miVerbo + " a la tienda " + miAdverbio + ".";
+    console.log(palabrasEnBlanco);
+
+    var listaDeProductos = [["Bolsa: ", 259], ["Cadena corazon: ", 199], ["Pulsera: ", 89]];    
+    console.log(listaDeProductos);
+    /*console.log(listaDeProductos[1]);
+    console.log(listaDeProductos[0][1]);
+
+    listaDeProductos.push(["Pin: ", 49]); //.push() sirve para agregar otro elemento al final de un arreglo.
+    console.log(listaDeProductos);
+
+    listaDeProductos.pop(); //.pop() sirve para quitar el ultimo elemento de un arreglo y tambien para reasignar el elemento removido a otra variable.
+    console.log(listaDeProductos);
+    var listaNoUsada = listaDeProductos.pop();
+    console.log(listaNoUsada);
+
+    listaDeProductos.shift(); //.shift() sirve para quitar el primer elemento de un arreglo.
+    console.log(listaDeProductos);
+
+    listaDeProductos.unshift(["Bolsa: ", 259]); //sirve para agregar un elemento al principio del arreglo y se tiene que escribir dentro de los parentesis.
+    console.log(listaDeProductos);
+
+    console.log("Costo de bolsa: " + listaDeProductos[0][1]);
+
+    function listaDePrecios(x, y, z) {
+      var precios = x + " " + y + " " + z;
+      console.log(precios);
+    }
+    
+    listaDePrecios("Bolsa: ", "Cadena: ", "Pulsera: ");
+
+    var a = "Pin: ";
+    var b = "Bolsa: ";
+    var c = "Collar: ";
+
+    listaDePrecios(a, b, c);
+
+    function proximoEnFila(arreglo, elemento) {
+      arreglo.push(elemento);     //Agrega al final del arreglo.
+      return arreglo.shift();     //Elimina el numero al principio del arreglo y luego devuelve el valor que se elimino.
+    }
+
+    console.log("Antes: " + JSON.stringify(listaDeProductos)); //JSON.stringify es una funcion muy util que nos permite mostrar arreglos en la consola de una manera mas ordenada.
+
+    console.log(proximoEnFila(listaDeProductos, "Pin: " + 89));
+
+    console.log("Despues: " + JSON.stringify(listaDeProductos));
+
+    /*console.log(5 == "5"); //el signo == lleva a cabo una comparacion sin importar el tipo de dato y si es igual el valor dara como resultado true.
+    console.log(5 === "5"); //el signo === realiza una comparacion estricta si el tipo de dato y el valor son iguales (en este caso es false porque el tipo de dato es una cadena).
+
+    console.log(5 != 6); //el operador != es llamado operador de desigualdad y si 2 valores son distintos el resultado sera true.
+    console.log(5 != 5); //aqui el resultado es false porque los valores son iguales.
+    console.log([1, 2, 3] != [1, 2, 3]); //este resultado nos da true porque son objetos independientes en la memoria de la maquina y no toma los valores de los arreglos para hacer la comparacion.
+
+    console.log(5 != "5"); //el signo != lleva a cabo una comparacion sin importar el tipo de dato y si es igual el valor dara como resultado true.
+    console.log(5 !== "5"); //el signo !== realiza una comparacion estricta si el tipo de dato y el valor son iguales (en este caso es false porque el tipo de dato es una cadena).
+
+    console.log("Hola" > "Mundo"); //sera true porque compara el orden alfabetico de que letra va primero comenzando de izquierda a derecha.
+    console.log ("H" > "M");
+    console.log("Mundo" > "Hola");*/
+
+    /*function puntajeDeGolf(par, golpes) {
+      
+        if (golpes == 1) {
+          return "Hole-in-one!";
+        }
+        else if (golpes <= par - 2) {
+          return "Eagle";
+        }
+        else if (golpes == par - 1) {
+          return "Birdie";
+        }
+        else if (golpes == par) {
+          return "Par";
+        }
+        else if (golpes == par + 1) {
+        return "Bogey";
+        }
+        else if (golpes == par + 2) {
+          return "Double Bogey";
+        }
+        else if (golpes >= par + 3)
+          return"Go Home!";        
+    }
+    console.log(puntajeDeGolf(4, 2));
+    
+    function clasificarValor(valor) { //Uso de switch es como un condicional, pero la diferencia es que ejecutara una linea especifica de codigo de acuerdo al valor asignado.
+      var respuesta;
+      switch(valor) {
+        case 1:
+          respuesta = "alpha";
+          break;
+        case 2:
+          respuesta = "beta";
+          break;
+        case 3:
+          respuesta = "gamma";
+          break;
+        case 4:
+          respuesta = "delta";
+          break;
+      }
+      return respuesta;
+    }
+    console.log(clasificarValor(4));
+
+    var producto = "Tacos"; //tambien puedes asignarle cadenas a los casos, no solamente valores numericos.
+    switch(producto) {
+      case "Pizza":
+        console.log("Costo de la Pizza: $200");
+        break;
+      case "Sundae":
+        console.log("Costo del Sundae: $50");
+        break;
+      case "Tacos":
+        console.log("Costo de los Tacos: $80");
+        break;
+    }
+    console.log("Dame esos tacazos");
+
+    function seleccionarIdioma(valor) {
+      var idioma;
+      switch(valor) {
+      case 1:
+        idioma = "Español";
+        break;
+      case 2:
+        idioma = "Frances";
+        break;
+      case 3:
+        idioma = "Aleman";
+        break;
+      default:              //esta opcion vendria siendo el equivalente a else en switch.
+        idioma = "Ingles";
+        break;
+      }
+      return idioma;
+    }
+    console.log(seleccionarIdioma(2));
+    
+
+    function clasificarVolumen(valor) {
+      var volumen;
+      switch (valor) {
+        case 1:
+          volumen = "bajo";
+          break;
+        case 2: //dividir el case de esta manera,
+        case 3: //hace que se le pueda asignar un mismo valor a 2 o mas cases.
+          volumen = "intermedio";
+        case 4:
+        case 5:
+        case 6:
+          volumen = "alto";
+          break;
+        default:
+          volumen = "We bajale, esta muy alto";
+      }
+      return volumen;
+    }
+    console.log(clasificarVolumen());
+
+     function esMenorQue(a, b) { //esto es una manera mas concisa que reemplaza a un condicional usado para devolver un valor booleano de una funcion.
+      return a < b; //justo despues de la funcion return puedes escribir la condicion y de esta manera creas un codigo mas conciso.
+     }
+    console.log(esMenorQue(5, 10));
+
+    function miFuncion() {
+      console.log("Hola");
+      return "Mundo";
+      console.log("Adios"); //Este mensaje no se muestra una vez que se llama a la funcion miFuncion, porque todo lo escrito despues de la funcion return deja de ejecutarse o mostrarse.
+    }
+    miFuncion();              //Aqui nos muestra solo el mensaje declarado dentro de la funcion.
+    console.log(miFuncion()); //Al agregar console.log fuera de la funcion, nos muestra el mensaje declarado dentro de la funcion (Hola) mas el valor retornado (Mundo).
+
+    function calcularRaizCuadrada(num) {
+      if (num < 0) {
+        return; //al solo escribir return, arrojara un valor predeterminado llamado undefined (puedes escribirlo despues de return y dara el mismo resultado).
+      } //este condicional se lleva acabo para que te arroje un patron de retorno anticipado.
+      return Math.sqrt(num);
+    }
+    console.log(calcularRaizCuadrada(-5));
+
+    var conteo = 0;
+    function contarCartas(carta) {
+      var decision;
+      switch (carta) {
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+          conteo++;
+          break;
+        case 10:
+        case "J":
+        case "Q":
+        case "K":
+        case "A":
+          conteo--;
+          break;
+      }
+      if (conteo > 0) {
+        decision = "Apostar";
+      }
+      else {
+        decision = "Esperar";
+      }
+      return conteo + " " + decision;
+    }
+    console.log(contarCartas(2));
+    console.log(contarCartas(3));
+    console.log(contarCartas("Q"));
+    console.log(contarCartas("A"));
+
+    var miPerro = {
+      "nombre": "Coby", //las propiedades pueden sar numeros o palabaras y para separar las propiedades unas de otras se usa la coma.
+      edad: 9, //se puede escribir la propiedad (izquierda) sin comillas solo cuando es una palabra y JS igualmente lo tomara como cadena (puedes hacerlo de las 2 maneras).
+      "peso": 2.5,
+      raza: ["maltes"]
+    };
+    console.log(miPerro);
+    console.log(miPerro.peso); //el punto despues del nombre de la variable se utiliza para acceder al valor de la propiedad del objeto (miPerro).
+
+    console.log(miPerro["raza"]); //esto es equivalente a notacion de punto despues de la variable o funcion para poder acceder al valor de la propiedad. Nota: A pesar de que la propiedad no tiene comillas, dentro de los corchetes si tienes que escribirlas.
+
+    var posicion = "nombre";
+    console.log(miPerro[posicion]); //tambien podemos usar una variable para acceder al valor de una propiedad en un objeto.
+
+    miPerro.nombre = "Maia"; //se utiliza para cambiar el valor de la propiedad (en este caso el nombre del perro).
+    console.log(miPerro.nombre);
+
+    miPerro.raza.push("french"); //con esto agregamos una linea al final del arreglo en la propiedad raza (en este caso agregamos french).
+    console.log(miPerro.raza);
+
+    miPerro["raza"] = ["ajua", "vamonos"]; //tambien podriamos sustituir los valores de todo el arreglo asignandole nuevos valores a miPerro.raza = "nuevos valores" o miPerro["raza"] = "nuevos valores".
+    console.log(miPerro.raza);
+
+    miPerro.comida = "A mi solo me gusta el chicken nugget"; //con esto agregamos una propiedad nueva al objeto con la variable miPerro (tambien podemos agregar la propiedad con corchetes miPerro["TEXTO"]).
+    console.log(miPerro["comida"]);
+
+    delete miPerro.peso; //con esto borramos una propiedad del objeto (en este caso la propiedad "peso").
+    console.log(miPerro["peso"]); //muestra undefined porque ya se elimino la propiedad "peso".
+
+    function buscarElementoQuimico(simbolo) { //de esta manera podemos saber a que elemento quimico se refieren sus iniciales y se puede hacer con una sentencia switch, solo que es mas elaborado y de esta manera es un codigo mas conciso.
+      var simbolosQuimicos = {
+        "Al": "Aluminio",
+        "S": "Azufre",
+        "Cl": "Cloro",
+        "He": "Helio",
+        "B": "Boro",
+        "Li": "Litio"
+      };
+      return simbolosQuimicos[simbolo];
+    }
+    console.log(buscarElementoQuimico("Li"));
+
+    console.log(miPerro.hasOwnProperty("nombre")); //al agregar .hasOwnProperty esto nos indica si la propiedad escrita entre parentesis existe en un objeto ya declarado.
+
+    function verificarPropiedad(obj, propiedad) { //Con esta funcion podemos saber si algun objeto cuenta con una propiedad al llamar a la funcion y colocar sus respectivos parametros.
+      if (obj.hasOwnProperty(propiedad)) {
+        return "Propiedad: " + obj[propiedad];
+      }
+      else {
+        return "El objeto no tiene esta propiedad.";
+      }
+    }
+    console.log(verificarPropiedad(miPerro, "nombre"));
+
+    //OBJETOS COMPLEJOS
+
+    let ordenesDeTacos = [ //es la creacion de un arreglo con 2 objetos anidados.
+      {
+        tipo: "Carne asada",
+        tortilla: "Harina",
+        ingredientes: [
+            "Repollo",
+            "Aguacate",
+            "Cebolla asada"
+        ],
+        "paraLlevar": true
+      }, //es muy importante poner esta coma, ya que estamos separando un elemento de otro dentro del arreglo.
+      {
+        "tipo": "Al pastor",
+        "tortilla": "Maiz",
+        "ingredientes": [
+            "Piña",
+            "Cilantro"
+        ],
+        "paraLlevar": false
+      }
+    ]
+    console.log(ordenesDeTacos[0]["ingredientes"]); //Si ponemos la propiedad entre corchetes debe llevar comillas para poder acceder a ella.
+    /*console.log(ordenesDeTacos[0].ingredientes);    //Es igual que la notacion de arriba, la diferencia es que accedemos a la propiedad con un punto despues del nombre de la funcion o variable y luego el nombre de la propiedad.
+    console.log(ordenesDeTacos[0].ingredientes[1]); //De esta manera accedes al valor Aguacate del arreglo anidado.
+    console.log(ordenesDeTacos[0]["ingredientes"][1]); //Esta es otra manera de acceder al mismo elemento de Aguacate.
+
+    function recursive(n) {
+      if (n === 0) {
+        return 0
+      }
+      else {
+        return n + recursive(n-1)
+      }
+    }
+    console.log(recursive(3)); //el resultado es 6 porque se va sumando el residuo de la suma mas el nuevo valor hasta llegar a cero, porque va disminuyeno el valor por ser recursividad.
+
+    let coleccionDeDiscos = {
+      7853: {
+        tituloDelAlbum: "Bee Gees Greatest",
+        artista: "Bee Gees",
+        canciones: "Stayin' Alive"
+      },
+      5439: {
+        "titulo del album": "ABBA Gold"        
+      }
+    }
+
+    function actualizarDiscos(discos, id, propiedad, valor) {
+      if (valor === "") {
+        delete discos[id][propiedad];
+      }
+      else if (propiedad === "canciones") {
+        discos[id][propiedad] = discos[id][propiedad] || [];
+        discos[id][propiedad].push(valor);
+      }
+      else {
+        discos[id][propiedad] = valor;
+      }
+    }
+      //Quitamos una propiedad (en este caso tituloDelAlbum) y agregamos una cadena vacia ("").
+      console.log(coleccionDeDiscos[7853]["tituloDelAlbum"]);
+
+      actualizarDiscos(coleccionDeDiscos, 7853, "tituloDelAlbum", "");
+
+      console.log(coleccionDeDiscos[7853]["tituloDelAlbum"]);
+
+      //Agregando la propiedad canciones y agregando el nombre de la cancion (con esto probamos el agregar un arreglo vacio y añadimos un valor a ese arreglo vacio).
+      console.log(coleccionDeDiscos[5439].canciones);
+
+      actualizarDiscos(coleccionDeDiscos, 5439, "canciones", "Dancing Queen");
+
+      console.log(coleccionDeDiscos[5439].canciones);
+
+      //Agregando la propiedad artista y agregando el nombre del mismo (con esto probamos la condicion else).
+      console.log(coleccionDeDiscos[5439].artista);
+
+      actualizarDiscos(coleccionDeDiscos, 5439, "artista", "ABBA");
+
+      console.log(coleccionDeDiscos[5439].artista);
+
+      //Ciclo While
+      let miArreglo = [];
+      let i = 0;
+
+      console.log(miArreglo);
+
+      while (i < 10) {    //Nos sirve para agregar los numero del 0 al 9 en el arreglo.
+        miArreglo.push(i);
+        i++
+      }
+      console.log(miArreglo);
+
+      //Quitando elementos de un arreglo
+      var num = [0, 2, 4, 6, 8, 10, 12];
+
+      while (num.length > 4) { //Cuando la longitud del arreglo sea menor o igual a 4, el ciclo se detendra.
+        num.pop();
+      }
+      console.log(num);
+
+      //Ciclo for
+      let miArregloFor = []
+      
+      for (let i = 0; i < 10; i++) { //Hace lo mismo que con el ciclo while.
+        miArregloFor.push(i)
+      }
+      console.log(miArregloFor)
+
+      let miArregloForTwo = []
+      for (let i = 0; i < 10; i += 2) { //incrementa los numero de 2 en 2.
+        miArregloForTwo.push(i)
+      }
+      console.log(miArregloForTwo)
+
+      let pares = []
+
+      for (let i = 0; i <= 26; i+= 2) { //arroja solo numero impares mayor o igual a 26. Tambien se puede calcular los #s impares inicializando i en 1 e incrementando el valor de 2 en 2.
+        pares.push(i)
+      }
+      console.log(pares)
+
+      //Nota: usar console.log() dentro de un ciclo es recomendable al principio para entender como funciona al operacion que estamos realizando.
+
+      let lenguajesProgramacion = ['JavaScript', 'Fox', 'Ajua']
+
+      for (let i = 0; i < lenguajesProgramacion.length; i++) {
+        console.log(lenguajesProgramacion[i].toUpperCase()) //es para pasar las palabras del arreglo a mayusculas.
+      }
+
+      function sumarPares(numeros) { //Sumar cuantos numeros pares hay dentro de un arreglo.
+        let suma = 0
+
+        for (i = 0; i < numeros.length; i++) {
+          if (numeros[i] % 2 == 0) {
+            suma++
+          }
+        }
+        return suma
+      }
+      console.log(sumarPares([2, 6, 10, 16, 22]))
+
+      //Ciclos For anidados.
+
+      let miArregloDos = [[1, 2, 3], [4, 5, 6], [7, 8, 9]] //Como acceder a arreglos anidados con un ciclo For.
+
+      for (let i = 0; i < miArregloDos.length; i++) {
+        let arregloAnidadoDos = miArregloDos[i] //Arreglo
+        console.log(miArregloDos[i])
+
+        for (let j = 0; j < arregloAnidadoDos.length; j++) {
+          console.log(arregloAnidadoDos[j]) //Elemento
+        }
+      }
+
+      //Ciclo do... while.
+      let equis = 15
+
+      do {
+        console.log(equis);
+        equis++
+      } 
+      while (equis < 10) //en el ciclo do... while se ejecuta el codigo al menos una vez antes de llegar a la condicion (es la diferencia que tiene con el clico while).
+      
+
+      //Busqueda de contactos.
+
+      let contactos = [
+        {
+          "nombre": "Nora",
+          "apellido": "Nav",
+          "numero": "0543236543",
+          "gustos": ["Pizza", "Programación"]
+        },
+        {
+          "nombre": "Harry",
+          "apellido": "Potter",
+          "numero": "0994372684",
+          "gustos": ["Hogwarts", "Magia"]
+        },
+        {
+          "nombre": "Sherlock",
+          "apellido": "Holmes",
+          "numero": "0487345643",
+          "gustos": ["Casos interesantes", "Violín"]
+        }
+        ];
+
+        function buscarPerfil(nombre, propiedad) {
+          for (let i = 0; i < contactos.length; i++) {
+            if (contactos[i].nombre === nombre) {
+              return contactos[i][propiedad] || "La propiedad no existe.";//se escribe propiedad entre [] porque es una variable, no una propiedad del objeto. Se agrego || a la condicion en el caso que la popiedad no exista, nos arroje esa string (es como un respaldo).
+            }            
+          }
+          return "El contacto no esta en la lista.";
+        }
+        console.log(buscarPerfil("Nora", "gustos"));
+        console.log(buscarPerfil("Nora", "pertenencias"));
+        console.log(buscarPerfil("Chavo", "gustos"));
+        console.log(buscarPerfil("Sherlock", "numero"));
+
+        //Numeros aleatorios del 0 al 1 y numero aleatorios enteros de 0 hasta el limite superior.
+
+        let numeroAleatorio = Math.floor(Math.random() * 30);
+        console.log(numeroAleatorio);
+
+        function generarEnteroAleatorio(limiteSuperior) {
+        // Generar un número aleatorio entre 0 y el límite
+        // superior (sin incluirlo).
+        return Math.floor(Math.random() * limiteSuperior); //Math.floor() te redondea numero decimales y Math.random()
+        }                                                  //te crea numero aleatorios entre 0 y 1 (sin jamas darte 1)
+
+        /*console.log(generarEnteroAleatorio(5));
+        console.log(generarEnteroAleatorio(50));
+        console.log(generarEnteroAleatorio(90));
+        console.log(generarEnteroAleatorio(100));
+        console.log(generarEnteroAleatorio(1500));
+
+        // Con un ciclo
+
+        for (let i = 0; i < 15; i++) {
+        console.log(generarEnteroAleatorio(10));
+        }
+
+        function rangoAleatorio(limiteInferior, limiteSuperior) {
+          return Math.floor(Math.random() * (limiteSuperior - limiteInferior + 1)) + limiteInferior;
+        }
+        //La operacion multiplicada despues de Math.random(), es para que nos de numeros aleatorios entre rangos del limite inferior y limite superior que nosotros proporcionemos.
+        /*console.log(rangoAleatorio(3, 8));
+        console.log(rangoAleatorio(3, 8));
+        console.log(rangoAleatorio(3, 8));
+        console.log(rangoAleatorio(3, 8));
+
+        //ciclo while.
+        let i = 0;
+        while (i < 10) {
+          console.log(rangoAleatorio(10, 20));
+          i++;
+        }
+
+  //Funcion parseInt()
+  console.log(parseInt("100")); //La funcion convierte un numero dentro de un string en un tipo de dato numerico.
+  console.log(parseInt("24.25")); //La funcion trunca la parte decimal (no la redondea) y solo te muestra el # 24 en este caso.
+  console.log(parseInt(8.8)); //Tambien te trunca la parte decimal del tipo de dato numerico.
+
+  let a = parseInt('4');
+  let b = parseInt('5');
+  console.log(a + b);
+
+  //Cuando no se utiliza la funcion ParseInt(), vemos que solamente se hace una concatenacion.
+  let c = "4";
+  let d = "5";
+  console.log(c + d);
+
+  //Funcion ParseInt() con una base.
+  console.log(parseInt("110111", 2)); // Binario  su base es 2 y te convierte el numero a decimal, en este caso seria 55.
+  console.log(parseInt(110111, 2));   // Binario  tambien se puede hacer la operacion con tipo de dato numerico.
+
+  console.log(parseInt("3E0A", 16));  // Hexadecimal  su base es 16 y convierte el numero hexadecimal a decimal (15882).
+                                      // Este tiene que ir entre comillas, ya que sin ellas da un error de sintaxis porque el sistema hexadecimal utiliza letras.
+
+  function retornarMinimo(x, y) {
+  if (x < y) {
+  	return x;
+  } else {
+  	return y;
+  }
+}
+
+// Con el operador ternario.
+
+function retornarMinimo(x, y) {
+  return x < y ? x : y; // primero es la condicion, luego va un signo ? y despues si la condicion es verdadera se elige el lado izquierdo sino (:), se elige el lado derecho.
+}
+
+console.log(retornarMinimo(4, 7));
+console.log(retornarMinimo(8, 2));
+console.log(retornarMinimo(5, 5));
+
+// Ejemplo 2
+
+var a = 15;
+var b = 9;
+
+console.log(a > b ? a + 2 : b * 3); //tambien se pueden crear operaciones dentro de las opciones a elegir 
+
+function compararNumeros(a, b) {
+  if (a === b) {
+    return "a y b son iguales";
+  } else if (a > b) {
+    return "a es mayor que b";
+  } else {
+    return "b es mayor que a";
+  }
+}
+
+// Con el operador condicional (ternario).
+
+function compararNumeros(a, b) {
+  return a === b ? "a y b son iguales"
+       : a > b ? "a es mayor que b" // asemeja el else if y se coloca otra condicion despues de los : y asi sucesivamente hasta llegar a lo que se asemejaria a else.
+       : "b es mayor que a";
+}
+
+console.log(compararNumeros(11, 27));
+console.log(compararNumeros(27, 11));
+console.log(compararNumeros(15, 15));
+
+// Con var podemos declarar una variable más de una vez.
+var campista = "James";
+var campista = "David";
+console.log(campista);
+
+// Con let no podemos declarar una variable más de una vez.
+let campista = "James";
+let campista = "David";
+console.log(campista);
+
+// Podemos cambiar el valor de la variable.
+let campista = "James";
+campista = "David";  	// sin let
+console.log(campista);
+
+var miVariableGlobal = 4;
+
+console.log(miVariableGlobal);
+
+function miFuncion() {
+  console.log(miVariableGlobal);
+
+  var miVariableLocal = 8;
+  console.log(miVariableLocal);
+}
+
+miFuncion();
+
+console.log(miVariableGlobal);
+console.log(miVariableLocal); // Error
+
+/* Cuanto declaras una variable con la palabra let dentro de un bloque, 
+una declaración o expresión, su alcance está limitado a ese bloque,
+declaración o expresión. 
+
+for (var i = 0; i < 3; i++) {
+  console.log(i);
+} 
+
+console.log(i); // No hay error si se usa var
+
+for (let i = 0; i < 3; i++) {
+  console.log(i);
+} 
+
+console.log(i); // Error si se usa let
+
+// Ejemplo con let
+
+var mostrarColor = true;
+
+if (mostrarColor) {
+  let color = "verde";
+  console.log("Mi color favorito es: " + color);
+}
+
+console.log(color); // Error
+
+// Ejemplo con var
+
+if (mostrarColor) {
+  var color = "verde";
+  console.log("Mi color favorito es " + color);
+}
+
+console.log(color); // No hay error
+
+function calcularAreaCirculo(radio) {
+  const PI = 3.14;
+
+  if (radio < 0) {
+      return undefined;
+  }
+
+  return PI * (radio ** 2); // Para elevar un numero a cualquier potenica se utiliza **.
+}
+
+console.log(calcularAreaCirculo(5));
+console.log(calcularAreaCirculo(10));
+
+const MI_ARREGLO = [1, 2, 3, 4];
+
+// MI_ARREGLO = [5, 6, 7, 8]; // Error porque usamos const
+
+// Pero sí podemos mutar el arreglo con la notación de corchetes
+MI_ARREGLO[0] = 5;
+MI_ARREGLO[1] = 6;
+MI_ARREGLO[2] = 7;
+MI_ARREGLO[3] = 8;
+
+console.log(MI_ARREGLO);
+
+let colores = { 
+  "verde": "#10e04b",
+  "azul": "#1b50e0",
+  "negro": "#000000",
+  "blanco": "#ffffff"
+}
+
+Object.freeze(colores);
+
+colores.amarillo = "#fff200"; // No se puede agregar nuevas propiedades.
+
+colores.verde = "#345sg5";    // No se puede cambiar los valores.
+ 
+delete colores.verde          // No se puede eliminar propiedades.
+
+// Función Anónima
+
+const fecha = function() {
+  return new Date();
+};
+
+// Función flecha
+
+const fecha = () => new Date();
+
+const sumarTres = function(x) {
+  return x + 3;
+};
+console.log(sumarTres(4));
+
+// Función Flecha
+const sumarTres = (x) => x + 3;
+console.log(sumarTres(4));
+
+// Ejemplo
+
+// Función Tradicional
+const concatenar = function(arr1, arr2) {
+  return arr1.concat(arr2);
+};
+console.log(concatenar([1, 2], [3, 4, 5]));
+
+// Función Flecha
+const concatenar = (arr1, arr2) => arr1.concat(arr2);
+console.log(concatenar([1, 2], [3, 4, 5]));
+
+// Ejemplo 3: Varias líneas. Debes incluir llaves y return.
+
+const sumar = (a, b) => {
+  let num = 6;
+  return a + b + num;
+};
+
+console.log(sumar(1, 1));
+
+const incrementar = (num, valor = 1) => num + valor; //Agregar un valor por defecto a un parametro de una funcion.
+
+console.log(incrementar(5));    // Valor por defecto
+console.log(incrementar(5, 3)); // Valor personalizado
+
+//Operador rest.
+function miFuncion(...args) { //para utilizar el operador rest, utilizamos tres puntos dentro de los parametros 
+  console.log(args);          //de la funcion, seguido del nombre del parametro.
+}
+
+//Con el operador rest, al llamar a la funcion, podemos agregar los elementos que queramos y se creara un arrego, incluso podemos añadir arreglos anidados.
+miFuncion(1);
+miFuncion(1, 2);
+miFuncion(1, 2, 3, 4);
+miFuncion([1, 2, 3], [4, 5, 6]);
+miFuncion(1, 2, 3, 4, 5, 6);
+
+// Ejemplo
+
+const sumar = (x, y, z) => {
+  const args = [x, y, z];
+  return args.reduce((a, b) => a + b, 0); //el metodo reduce lo puedes llamar con un arreglo y suma los elementos de un arreglo.
+};
+console.log(1, 2, 3, 4, [10, 20, 30]);
+
+const sum = (...args) => {
+  return args.reduce((a, b) => a + b, 0);
+};
+console.log(1, 2, [10, 20]);
+
+//Operador spread.
+const numeros = [1, 2, 3];
+
+function sumar(x, y, z) { //lo que hace el operador spread es descomponer los elementos de un arreglo, para asignarlos
+  console.log(x);         //un por uno a cada parametro dentro de una funcion, en este caso x, y, z.
+  console.log(y);
+  console.log(z);
+  return x + y + z;
+}
+
+console.log(sumar(...numeros)); //El metodo spread se utiliza igual que el operador rest, pero la diferencia es que se
+                                //se utiliza al llamar a la funcion (... seguido del nombre de la variable que contiene)
+                                //el arreglo asignado).
+
+//Sintaxis de desestructuracion.
+// Para Objetos
+const usuario = { 
+  nombre: "Gino Smith",
+  edad: 34 
+};
+
+// Forma anterior de asignar las propiedades a variables
+const nombre = usuario.nombre;
+const edad = usuario.edad;
+
+// En ES6
+const {nombre, edad} = usuario;
+
+// Ejemplo
+
+var coordenadas = {
+  x: 4, 
+  y: 6, 
+  z: 12
+};
+
+// Anteriormente.
+var x = coordenadas.x;
+var y = coordenadas.y;
+var z = coordenadas.z;
+
+// Ahora podemos usar la sintaxis de desestructuración.
+const {x, y, z} = coordenadas;
+console.log(x);
+console.log(y);
+console.log(z);
+
+//Sintaxis de desestructuracion con objetos anidados.
+const usuario = {
+  johnDoe: { 
+    edad: 27,
+    correo: "johnDoe@freecodecamp.com"
+  }
+};
+
+const { johnDoe: { edad, correo }} = usuario;
+
+console.log(edad);
+console.log(correo);
+
+// Asignar nombres distintos a las variables
+
+const { johnDoe: { edad: edadDelUsuario, correo: correoDelUsuario }} = usuario;
+
+console.log(edadDelUsuario);
+console.log(correoDelUsuario);
+
+// Ejemplo
+
+const PRONOSTICO_LOCAL = {
+  "ayer": { 
+    minima: 61, 
+    maxima: 75 
+  },
+  "hoy": { 
+    minima: 64, 
+    maxima: 77 
+  },
+  "mañana": {
+    minima: 68,
+    maxima: 80 
+  }
+};
+
+const minimaHoy = PRONOSTICO_LOCAL.hoy.minima;
+const maximaHoy = PRONOSTICO_LOCAL.hoy.maxima;
+
+// Asignar las propiedades individualmente
+
+const {hoy: {minima: minimaHoy}} = PRONOSTICO_LOCAL; 
+console.log(minimaHoy);
+
+const {hoy: {maxima: maximaHoy}} = PRONOSTICO_LOCAL;
+console.log(maximaHoy);
+
+// Asignar ambas propiedades
+
+const {hoy: {minima: minimaHoy, maxima: maximaHoy}} = PRONOSTICO_LOCAL;
+console.log(minimaHoy, maximaHoy);
+
+//Sintaxis de desestructuracion para arreglos.
+var a;
+var b;
+var c;
+
+[a, b] = [1, 2];
+console.log(a); // 1
+console.log(b); // 2
+
+[a, b, c] = [1, 2, 3];
+console.log(a); // 1
+console.log(b); // 2
+console.log(c);
+
+[a, b] = [1, 2, 3, 4, 5, 6];
+console.log(a); // 1
+console.log(b); // 2
+
+[a, b,,, c] = [1, 2, 3, 4, 5, 6]; //para añadir el valor 5 a c, se colocan tres comas para saltarse los valores 3 y 4.
+console.log(a); // 1
+console.log(b); // 2
+console.log(c); // 5 //las comas tambien pueden ir separadas con un espacio y el resultado seria el mismo.
+
+// Intercambiar valores de variables
+
+var a = 8;
+var b = 6;
+
+[b, a] = [b, a];
+
+console.log("a: ", a);
+console.log("b: ", b);
+
+
+//Sintaxis de desestructuración con el operador rest para reasignar un arreglo.
+var a;
+var b;
+var arr;
+
+[a, b, ...arr] = [1, 2, 3, 4, 5, 6];
+
+console.log(a);   // 1
+console.log(b);   // 2
+console.log(arr); // [3, 4, 5, 6]
+
+// Ejemplo
+
+const arregloInicial = [1, 2, 3, 4, 5, 6, 7, 8];
+
+function removerTresPrimerosElementos(arreglo) {
+  const [ , , ...nuevoArreglo] = arreglo; 
+  return nuevoArreglo;
+}
+
+const arregloFinal = removerTresPrimerosElementos(arregloInicial);
+console.log(arregloFinal);
+
+
+//Sintaxis de desestructuración para pasar un objeto.
+var nuevoPerfilCliente = {
+  nombre: "Jane Doe",
+  edad: 24,
+  nacionalidad: "Española",
+  ubicacion: "España"
+};
+
+const actualizarPerfil = (informacionDePerfil) => {
+  const {nombre, edad, nacionalidad, ubicacion} = informacionDePerfil;
+  console.log(nombre);
+  console.log(edad);
+  console.log(nacionalidad);
+  console.log(ubicacion);
+}
+
+actualizarPerfil(nuevoPerfilCliente);
+
+// Alternativa: usar la sintaxis de desestructuración directamente
+// en la lista de parámetros.
+
+const actualizarPerfil = ({nombre, edad, nacionalidad, ubicacion}) => {
+  console.log(nombre);
+  console.log(edad);
+  console.log(nacionalidad);
+  console.log(ubicacion);
+}
+
+actualizarPerfil(nuevoPerfilCliente);
+
+// Ejemplo
+
+const estadisticas = {
+  max: 56.78,
+  desviacionEstandar: 4.34,
+  mediana: 34.54,
+  moda: 23.87,
+  min: -0.75,
+  promedio: 35.85
+};
+
+const mitad = (e) => (e.max + e.min) / 2.0; 
+
+// Usando la sintaxis de desestructuración para pasar un objeto.
+const mitad = ({max, min}) => (max + min) / 2.0; 
+
+console.log(mitad(estadisticas));
+
+//Plantillas literales o plantillas de cadena.
+/*
+Características:
+- Se usa el acento invertido (backtick) ` en lugar de comillas.
+- Pueden contener comillas simples y dobles.
+- Las líneas se preservan como se escriben en el código.
+- Para reemplazar una variable se escribe ${variable}.
+- Dentro de ${} también puedes escribir expresiones.
+
+var a = 6;
+console.log(`El valor de a es ${a}.`);
+
+var nombre  = "Nora";
+var edad = 6;
+console.log(`Mi nombre es ${nombre} y tengo ${edad} años.`);
+
+var miArreglo = [1, 2, 3, 4];
+console.log(`El arreglo es: ${JSON.stringify(miArreglo)}`); //JSON.stringify ayuda a que el arreglo se vea mas presentable.
+
+// Ejemplo con objeto
+
+const persona = {
+  nombre: "Gino Cass",
+  edad: 10
+};
+  
+const saludo = `¡Hola! Mi nombre es ${persona.nombre} 
+y tengo ${persona.edad} años.`;
+  
+console.log(saludo);
+
+//Crear objetos de forma concisa.
+// Inicialmente
+
+const crearPersona = (nombre, edad, idioma) => {
+  return {
+    nombre: nombre,
+    edad: edad,
+    idioma: idioma
+  };
+};
+
+console.log(crearPersona("Gino Smith", 28, "Español"));
+
+// Alternativa más concisa
+
+const crearPersona = (nombre, edad, idioma) => ({nombre, edad, idioma});
+
+console.log(crearPersona("Gino Smith", 28, "Español"));
+
+//Metodos en JavaScript.
+
+// Versión ES5
+
+const persona = {
+  nombre: "Isabel",
+  presentarse: function() {
+    return `¡Hola! Mi nombre es ${this.nombre}.`;
+  }
+};
+
+console.log(persona.presentarse());
+
+
+// Versión ES6
+
+const persona = {
+  nombre: "Isabel",
+  presentarse() {
+    console.log(`¡Hola! Mi nombre es ${this.nombre}.`); //this se refiere al objeto con el que estamos trabajando, por ende se toma la propiedad que elijamos dentro del mismo objeto que estamos trabajando.
+  }
+};
+
+persona.presentarse(); //Si el valor de una propiedad es una funcion, se denomina "metodo."
+
+
+//Definir una clase en JavaScript.
+
+class TransbordadorEspacial {
+  constructor(planeta) {
+    this.planeta = planeta;
+  }
+}
+
+var zeus = new TransbordadorEspacial('Júpiter');
+console.log(zeus.planeta);
+
+var apolo = new TransbordadorEspacial('Marte');
+console.log(zeus.planeta);
+
+// Ejemplo
+
+class Mascota {
+  constructor(nombre, edad, raza) {
+    this.nombre = nombre;
+    this.edad = edad;
+    this.raza = raza;
+  }
+}
+
+var miMascota = new Mascota("Coby", 9, "Maltes");
+
+console.log(miMascota.nombre);
+console.log(miMascota.edad);
+console.log(miMascota.raza);
+
+var tuMascota = new Mascota("Maia", 3, 'Maltes');
+
+console.log(tuMascota.nombre);
+console.log(tuMascota.edad);
+console.log(tuMascota.raza);
+
+var mascotaNacozari = new Mascota("Antonio", 7, "Mastin Ingles");
+console.log(mascotaNacozari.nombre);
+console.log(mascotaNacozari.edad);
+console.log(mascotaNacozari.raza);
+
+
+//Getters y setters en JavaScript.
+
+class Libro {
+  constructor(autor) {
+    this._autor = autor; //el guion bajo antes de la propiedad creada (autor) se utiliza para que no se pueda modificar esa propiedad.
+  }
+
+  // Getter
+  get autor() {
+    return this._autor; //con el getter podemos conseguir el valor indirecto de una propiedad.
+  }
+
+  // Setter
+  set autor(nuevoAutor) {
+    this._autor = nuevoAutor; //con un setter puedes utilizar condicionales (por ejemplo, console.log) y de esta manera saber si podemos asignarlo a una variable dependiendo si es valido.
+  }
+}
+
+const libro = new Libro("anónimo");
+console.log(libro.autor);
+
+libro.autor = "Gino Smith"; //con los setters podemos modificar el valor directo de una propiedad de un objeto ya creado.
+console.log(libro.autor);   //los getters y setters actuan como intermediarios.
+
+</script>
